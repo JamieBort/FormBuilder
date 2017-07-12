@@ -81,7 +81,6 @@ let formData = [
   }
 ];
 
-
 // HINTS:
 // As you can see, we access the first element in the array
 // with [0] and then grab the property "label" using the "." operator
@@ -95,77 +94,61 @@ let formData = [
 })();
 
 
-
-//
-// let input1 = document.createElement( "input" );
-// document.appendChild(input1);
-//
-// input1.setAttribute("id", "text");
-
 // -------- Your Code Goes Below this Line --------
-let fields = document.getElementById("fields");
 
-// <input type="text" id="user-first-name" placeholder="First Name">
+
+
 
 for (var i = 0; i < formData.length; i++) {
-  if (formData[i].type === "text") {
+  let labelVariable = document.createElement('input');
 
-    let input = document.createElement("input");
+  console.log(labelVariable);
 
-    console.log(input);
+  // create html element input for each key label
 
-    fields.appendChild(input);
+  fields.appendChild(labelVariable);
 
-    input.setAttribute("placeholder", "text");
+  // apend input to div named 'fields'
 
+  // add attributes to each input based on value of label
+
+  let x = formData[i].label;
+
+  console.log(x);
+
+  let y = formData[i].type;
+
+  console.log(y);
+
+  let z = formData[i].id;
+
+  console.log(z);
+
+  labelVariable.setAttribute('placeholder', x);
+
+  labelVariable.setAttribute('type', y);
+
+  labelVariable.setAttribute('id', z);
+
+  if (formData[i].type === "select") {
+
+    for (var n = 0; n < formData[i].options.length; i++) {
+
+
+
+    console.log(formData[i]);
+
+    let w = formData[i].options;
+
+    labelVariable.setAttribute('options', w);
+
+    let t = formData[i]['options']['label'];
+
+    let s = formData[i]['options']['value'];
+
+  options.setAttribute('label', formData[i]['options[n]']['label']);
+
+    options.setAttribute('label', s);
   }
-
-  else if (formData[i].type === "email") {
-    input[i] = document.createElement("input");
-    fields.appendChild(input[i]);
-    input[i].setAttribute("type", "email");
-  }
-
-  else if (formData[i].type === "select") {
-    input[i] = document.createElement("input");
-    fields.appendChild(input[i]);
-    input[i].setAttribute("type", "select");
-  }
-
-  else if (formData[i].type === "textarea") {
-    input[i] = document.createElement("input");
-    fields.appendChild(input[i]);
-    input[i].setAttribute("type", "textarea");
-  }
-
-  else if (formData[i].type === "tel") {
-    input[i] = document.createElement("input");
-    fields.appendChild(input[i]);
-    input[i].setAttribute("type", "tel");
-
-  }
-document.querySelector('input').setAttribute("placeholder", formData[i].label);
-
-  document.querySelector('input').setAttribute("id", "user-first-name");
 }
-
-// let input2 = document.createElement( "input" );
-// fields.appendChild(input2);
-//
-// let input3 = document.createElement( "input" );
-// fields.appendChild(input3)
-
-// let input1 = document.createElement("input");
-// fields.appendChild(input1);
-//
-// input1.setAttribute("type", "select");
-// input1.setAttribute("placeholder", "First Name");
-// input1.setAttribute("id", "user-first-name");
-
-for (var i = 0; i < formData.length; i++) {
-  {generate the html tag};
-  input[i] = document.createElement("input");
-  {create first attribute};
-  {create second attribute};
-  {create third attribute};
 }
