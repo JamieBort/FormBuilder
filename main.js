@@ -108,40 +108,46 @@ let fields = document.getElementById("fields");
 // <input type="text" id="user-first-name" placeholder="First Name">
 
 for (var i = 0; i < formData.length; i++) {
-  if (formData[i].type = "text") {
+  if (formData[i].type === "text") {
+
     let input = document.createElement("input");
+
+    console.log(input);
+
     fields.appendChild(input);
-    // input[i].setAttribute("placeholder", "text");
+
+    input.setAttribute("placeholder", "text");
+
   }
+
+  else if (formData[i].type === "email") {
+    input[i] = document.createElement("input");
+    fields.appendChild(input[i]);
+    input[i].setAttribute("type", "email");
+  }
+
+  else if (formData[i].type === "select") {
+    input[i] = document.createElement("input");
+    fields.appendChild(input[i]);
+    input[i].setAttribute("type", "select");
+  }
+
+  else if (formData[i].type === "textarea") {
+    input[i] = document.createElement("input");
+    fields.appendChild(input[i]);
+    input[i].setAttribute("type", "textarea");
+  }
+
+  else if (formData[i].type === "tel") {
+    input[i] = document.createElement("input");
+    fields.appendChild(input[i]);
+    input[i].setAttribute("type", "tel");
+
+  }
+document.querySelector('input').setAttribute("placeholder", formData[i].label);
+
+  document.querySelector('input').setAttribute("id", "user-first-name");
 }
-  //else if
-  //   (formData[i].type = email) {
-  //     input[i] = document.createElement("input");
-  //     fields.appendChild(input[i]);
-  //     input[i].setAttribute("type", "email");
-  //   } else {
-  //     if (formData[i].type = select) {
-  //       input[i] = document.createElement("input");
-  //       fields.appendChild(input[i]);
-  //       input[i].setAttribute("type", "select");
-  //     } else {
-  //       if (formData[i].type = textarea) {
-  //         input[i] = document.createElement("input");
-  //         fields.appendChild(input[i]);
-  //         input[i].setAttribute("type", "textarea");
-  //       } else {
-  //         if (formData[i].type = tel) {
-  //           input[i] = document.createElement("input");
-  //           fields.appendChild(input[i]);
-  //           input[i].setAttribute("type", "tel");
-  //         }
-  //       }
-  //     }
-  //   }
-  // }
-//   input[i].setAttribute("placeholder", "First Name");
-//   input[i].setAttribute("id", "user-first-name");
-// }
 
 // let input2 = document.createElement( "input" );
 // fields.appendChild(input2);
@@ -155,3 +161,11 @@ for (var i = 0; i < formData.length; i++) {
 // input1.setAttribute("type", "select");
 // input1.setAttribute("placeholder", "First Name");
 // input1.setAttribute("id", "user-first-name");
+
+for (var i = 0; i < formData.length; i++) {
+  {generate the html tag};
+  input[i] = document.createElement("input");
+  {create first attribute};
+  {create second attribute};
+  {create third attribute};
+}
