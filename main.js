@@ -100,55 +100,64 @@ let formData = [
 
 
 for (var i = 0; i < formData.length; i++) {
-  let labelVariable = document.createElement('input');
+  let labelVariable =
 
-  console.log(labelVariable);
+    // create html element input for each key label
+    document.createElement('input');
 
-  // create html element input for each key label
+  // console.log( "This is the label variable: " + labelVariable);
 
+  // apend labelVariable=input to div named 'fields'
   fields.appendChild(labelVariable);
 
-  // apend input to div named 'fields'
+
 
   // add attributes to each input based on value of label
-
   let x = formData[i].label;
-
   console.log(x);
 
   let y = formData[i].type;
-
   console.log(y);
 
   let z = formData[i].id;
-
   console.log(z);
 
   labelVariable.setAttribute('placeholder', x);
-
   labelVariable.setAttribute('type', y);
-
   labelVariable.setAttribute('id', z);
 
   if (formData[i].type === "select") {
+    console.log("holy moly test");
+
+    console.log("the length of the origin array is " + formData[i].options.length);
 
     for (var n = 0; n < formData[i].options.length; i++) {
 
+      console.log("what is this? " + formData[i]);
+
+      let w = formData[i].options;
+
+      labelVariable.setAttribute('options', w);
+
+      let section = document.createElement('section');
+
+      labelVariable.appendChild(section);
+
+      let option = document.createElement('option');
+
+      section.appendChild(option);
+
+      let t = formData[i]['options']['label'];
+
+      let s = formData[i]['options']['value'];
+
+      option.setAttribute('label', t);
+      option.setAttribute('value', s);
 
 
-    console.log(formData[i]);
+      // options.setAttribute('label', formData[i]['options[n]']['label']);
 
-    let w = formData[i].options;
-
-    labelVariable.setAttribute('options', w);
-
-    let t = formData[i]['options']['label'];
-
-    let s = formData[i]['options']['value'];
-
-  options.setAttribute('label', formData[i]['options[n]']['label']);
-
-    options.setAttribute('label', s);
+      // options.setAttribute('label', s);
+    }
   }
-}
 }
