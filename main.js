@@ -96,21 +96,17 @@ let formData = [
 
 // -------- Your Code Goes Below this Line --------
 
-
-
-
 for (var i = 0; i < formData.length; i++) {
   let labelVariable =
 
-    // create html element input for each key label
+    // create html element input tag for each key label
     document.createElement('input');
+    console.log(labelVariable);
 
-  // console.log( "This is the label variable: " + labelVariable);
+  console.log("This is the label variable: " + labelVariable);
 
   // apend labelVariable=input to div named 'fields'
   fields.appendChild(labelVariable);
-
-
 
   // add attributes to each input based on value of label
   let x = formData[i].label;
@@ -122,21 +118,32 @@ for (var i = 0; i < formData.length; i++) {
   let z = formData[i].id;
   console.log(z);
 
+
   labelVariable.setAttribute('placeholder', x);
   labelVariable.setAttribute('type', y);
   labelVariable.setAttribute('id', z);
 
+  // console.log(formData[4].options);
+  // console.log(formData[4].options[1].label);
+  // console.log(formData[4].options[1].value);
+
   if (formData[i].type === "select") {
-    console.log("holy moly test");
 
     console.log("the length of the origin array is " + formData[i].options.length);
 
-    for (var n = 0; n < formData[i].options.length; i++) {
+    for (var n = 0; n < formData[i].options.length; n++) {
 
-      console.log("what is this? " + formData[i]);
+      // console.log(formData[i].options[n].label);
+      // console.log(formData[i].options[n].value);
+      // console.log("what is this? " + formData[i]);
 
-      let w = formData[i].options;
+      // console.log(formData[i].options[1].label);
+      // console.log(formData[i].options[2].label);
+      // console.log(formData[i].options[3].label);
+      // console.log(formData[i].options[4].label);
 
+      let w = formData[i].options[n];
+      console.log(w);
       labelVariable.setAttribute('options', w);
 
       let section = document.createElement('section');
@@ -147,16 +154,18 @@ for (var i = 0; i < formData.length; i++) {
 
       section.appendChild(option);
 
-      let t = formData[i]['options']['label'];
+      let t = formData[4]['options'][n]['label'];
+      console.log(t);
 
-      let s = formData[i]['options']['value'];
+      let s = formData[4]['options'][n]['value'];
+      console.log(s);
 
       option.setAttribute('label', t);
       option.setAttribute('value', s);
 
+      
 
       // options.setAttribute('label', formData[i]['options[n]']['label']);
-
       // options.setAttribute('label', s);
     }
   }
