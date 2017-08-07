@@ -5,7 +5,7 @@ from: https://newline.theironyard.com/cohorts/15/courses/9/projects/55
 Download the starter files below. Using the variable formData at the top of the main.js file, iterate through the data and dynamically add the form fields to the page.
 The basic HTML and starter files are included for you.
 
-![Image of what it needs to look like](/images/d0969505-full.png)
+![Image of what it needs to look like](/images/d9869505-full.png)
 
 **Interpreting the formData Array**
 
