@@ -101,7 +101,7 @@ for (var i = 0; i < formData.length; i++) {
 
     // create html element input tag for each key label
     document.createElement('input');
-    console.log(labelVariable);
+  console.log(labelVariable);
 
   console.log("This is the label variable: " + labelVariable);
 
@@ -123,9 +123,10 @@ for (var i = 0; i < formData.length; i++) {
   labelVariable.setAttribute('type', y);
   labelVariable.setAttribute('id', z);
 
-  // console.log(formData[4].options);
-  // console.log(formData[4].options[1].label);
-  // console.log(formData[4].options[1].value);
+
+  let select = document.createElement('select');
+  // let fields = document.querySelector(‘.fields);
+
 
   if (formData[i].type === "select") {
 
@@ -133,26 +134,13 @@ for (var i = 0; i < formData.length; i++) {
 
     for (var n = 0; n < formData[i].options.length; n++) {
 
-      // console.log(formData[i].options[n].label);
-      // console.log(formData[i].options[n].value);
-      // console.log("what is this? " + formData[i]);
 
-      // console.log(formData[i].options[1].label);
-      // console.log(formData[i].options[2].label);
-      // console.log(formData[i].options[3].label);
-      // console.log(formData[i].options[4].label);
-
-      let w = formData[i].options[n];
-      console.log(w);
-      labelVariable.setAttribute('options', w);
-
-      let section = document.createElement('section');
-
-      labelVariable.appendChild(section);
+      fields.appendChild(select);
 
       let option = document.createElement('option');
 
-      section.appendChild(option);
+      select.appendChild(option);
+      console.log(option);
 
       let t = formData[4]['options'][n]['label'];
       console.log(t);
@@ -162,11 +150,6 @@ for (var i = 0; i < formData.length; i++) {
 
       option.setAttribute('label', t);
       option.setAttribute('value', s);
-
-      
-
-      // options.setAttribute('label', formData[i]['options[n]']['label']);
-      // options.setAttribute('label', s);
     }
   }
 }

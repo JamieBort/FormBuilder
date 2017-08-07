@@ -1,3 +1,5 @@
+<!-- Come back to implement the hard section using font awesome -->
+
 from: https://newline.theironyard.com/cohorts/15/courses/9/projects/55
 
 **Instructions**
