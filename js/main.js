@@ -97,4 +97,18 @@ let formData = [
 
 // -------- Your Code Goes Below this Line --------
 
+// Create all of the needed HTML nodes
 
+let wrapper = document.createElement( "div" );
+let form = document.createElement( "form" );
+let header = document.createElement( "div" );
+let title = document.createElement( "span" );
+
+// Create all of the text nodes
+
+// Set any needed attribute
+// values for the HTML nodes
+
+// Build the node tree
+
+// Add all of the text to each element
