@@ -36,6 +36,8 @@ For instance, the following code snippet is the first object in the `formData` a
 
 The first form element has been included as a comment in the HTML file so that you can see this in action. Your job is to iterate over the array, parse the objects, and construct the inputs to recreate the form in the screenshot.
 
+[Link to the starter files.](https://github.com/JamieBort/FormBuilder/tree/master/SourceFiles/starter_files) 
+
 **Hard Mode**
 
 * Use [Font Awesome](http://fontawesome.io/) to add the icons to the left of the inputs. You'll notice the `fa-` is in the data for each element.
