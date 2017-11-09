@@ -10,7 +10,7 @@ This project will test your knowledge of parsing through an array of data and ap
 * Download the starter files below. Using the variable `formData` at the top of the `main.js` file, iterate through the data and dynamically add the form fields to the page.
 * The basic HTML and starter files are included for you.
 
-![Image of what it needs to look like.](/images/d9869505-full.png)
+![Image of what it needs to look like.](https://github.com/JamieBort/FormBuilder/blob/master/images/d9868595-full.png)
 
 **Interpreting the formData Array**
 
@@ -36,7 +36,7 @@ For instance, the following code snippet is the first object in the `formData` a
 
 The first form element has been included as a comment in the HTML file so that you can see this in action. Your job is to iterate over the array, parse the objects, and construct the inputs to recreate the form in the screenshot.
 
-[Link to the starter files.](https://github.com/JamieBort/FormBuilder/tree/master/SourceFiles/starter_files) 
+[Link to the starter files.](https://github.com/JamieBort/FormBuilder/tree/master/SourceFiles/starter_files)
 
 **Hard Mode**
 
