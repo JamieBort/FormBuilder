@@ -3,7 +3,8 @@ A completed commit was pushed. However I need to revisit this to address the fol
 1. Come back to implement the hard section using font awesome.
 2. When that is done, address the CSS so that the finished product looks like the image given to us.
 3. Refactor the code using loops to make it more concise. See Brandon's for an example of how it should ultimately look.
-4. Lastly, update gh_pages.
+4. Optionally, figure out which value the 'value' attribute should in the form elements. So that it pulls from the data file and/or pushes to the data base.
+5. Lastly, update gh_pages.
 
 from: https://newline.theironyard.com/cohorts/15/courses/9/projects/55
 
