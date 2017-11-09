@@ -1,4 +1,5 @@
 TODO:
+
 A completed commit was pushed. However I need to revisit this to address the following:
 1. Come back to implement the ['Hard Mode'](#hard-mode) using font awesome.
 2. When that is done, address the CSS so that the finished product looks like the image given to us.
@@ -44,6 +45,6 @@ The first form element has been included as a comment in the HTML file so that y
 
 [Link to the starter files.](https://github.com/JamieBort/FormBuilder/tree/master/SourceFiles/starter_files)
 
-# Hard Mode
+## Hard Mode
 
 * Use [Font Awesome](http://fontawesome.io/) to add the icons to the left of the inputs. You'll notice the `fa-` is in the data for each element.
