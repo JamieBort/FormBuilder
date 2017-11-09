@@ -25,7 +25,7 @@
   padding: 25px;
 }
 
-.wrapper .fields input,
+/*.wrapper .fields input,
 .wrapper .fields textarea,
 .wrapper .fields select
  {
@@ -36,7 +36,7 @@
   border-radius: 3px;
   margin: 10px;
   font-size: 15px;
-}
+}*/
 
 .wrapper .fields textarea {
   height: 125px;
@@ -56,4 +56,19 @@
   border: 1px solid #267BC5;
   border-radius: 3px;
   font-size: 15px;
+}
+
+
+/*My code below this line. For Font Awesome*/
+.div_class{
+  padding-left: 15px;
+  width: 200px;
+  height: 18px;
+  border: 2px solid #CCD1D4;
+  border-radius: 3px;
+  margin: 10px;
+  font-size: 15px;
+}
+.input_class{
+  border: hidden;
 }
