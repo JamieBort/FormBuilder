@@ -19,7 +19,7 @@ This project will test your knowledge of parsing through an array of data and ap
 
 ![Image of what it needs to look like. (Link is broken.)](./images/d9868595-full.png)
 
-**Interpreting the formData Array**
+## Interpreting the formData Array
 
 Each object in the array contains data about one of the input controls for the form. These objects have several properties that we will discuss briefly.
 
