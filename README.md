@@ -1,10 +1,10 @@
 TODO:
 A completed commit was pushed. However I need to revisit this to address the following:
-1. Come back to implement the hard section using font awesome.
+1. Come back to implement the ['Hard Mode'](#hard-mode) using font awesome.
 2. When that is done, address the CSS so that the finished product looks like the image given to us.
 3. Refactor the code using loops to make it more concise. See Brandon's for an example of how it should ultimately look.
 4. Optionally, figure out which value the 'value' attribute should in the form elements. So that it pulls from the data file and/or pushes to the data base.
-5. Lastly, update gh_pages.
+5. Lastly, update `gh-pages`.
 
 from: https://newline.theironyard.com/cohorts/15/courses/9/projects/55
 
@@ -44,6 +44,6 @@ The first form element has been included as a comment in the HTML file so that y
 
 [Link to the starter files.](https://github.com/JamieBort/FormBuilder/tree/master/SourceFiles/starter_files)
 
-**Hard Mode**
+# Hard Mode
 
 * Use [Font Awesome](http://fontawesome.io/) to add the icons to the left of the inputs. You'll notice the `fa-` is in the data for each element.
