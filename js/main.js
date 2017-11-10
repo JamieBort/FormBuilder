@@ -123,7 +123,6 @@ let url = document.createElement( "input" );
 
 let selectDiv = document.createElement( "div" );
 let select_i = document.createElement( "i" );
-// let select = document.createElement( "input" );
 let select = document.createElement( "select" );
 
 let firstOption = document.createElement( "Option" );
