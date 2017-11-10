@@ -94,6 +94,35 @@ let formData = [
   console.log( first.label );
 } )();
 
+console.log(formData[ 0 ].type);
+console.log(formData[ 0 ].id);
+
+console.log(formData[ 1 ]);
+console.log(formData[ 1 ].id);
+
+console.log(formData[ 2 ]);
+console.log(formData[ 2 ].id);
+
+console.log(formData[ 3 ]);
+console.log(formData[ 3 ].label);
+console.log(formData[ 3 ].id);
+
+console.log(formData[ 4 ]);
+console.log(formData[ 4 ].label);
+console.log(formData[ 4 ].id);
+console.log(formData[ 4 ].options);
+console.log(formData[ 4 ].options[ 0 ]);
+console.log(formData[ 4 ].options[ 0 ].label);
+console.log(formData[ 4 ].options[ 1 ].label);
+console.log(formData[ 4 ].options[ 4 ].label);
+
+console.log(formData[ 5 ].id);
+
+console.log(formData[ 6 ].id);
+console.log(formData[ 6 ].icon);
+
+console.log(formData[ 7 ].id);
+console.log(formData[ 7 ].icon);
 
 // -------- Your Code Goes Below this Line --------
 
@@ -144,18 +173,18 @@ let homeDiv = document.createElement( "div" );
 let home_i = document.createElement( "i" );
 let home = document.createElement( "input" );
 
-let footer = document.createElement( "div" );
+let footer = document.createElement( "div" ); // Nothing to iterate over.
 let button = document.createElement( "button" );
 
 // Create all of the text nodes
-let spanText = document.createTextNode( "Sign Up For My Web App" );
-let buttonText = document.createTextNode( "Submit Form" );
-let firstOptionText = document.createTextNode( "Select Language" );
-let secondOptionText = document.createTextNode( "English" );
-let thirdOptionText = document.createTextNode( "French" );
-let forthOptionText = document.createTextNode( "Spanish" );
-let fifthOptionText = document.createTextNode( "Chinese" );
-let sixthOptionText = document.createTextNode( "Japanese" );
+let spanText = document.createTextNode( "Sign Up For My Web App" ); // Nothing to iterate over.
+let buttonText = document.createTextNode( "Submit Form" ); // Nothing to iterate over.
+let firstOptionText = document.createTextNode( "Select Language" ); // formData[ 4 ].label
+let secondOptionText = document.createTextNode( "English" ); // formData[ 4 ].options[ 0 ].label
+let thirdOptionText = document.createTextNode( "French" ); // formData[ 4 ].options[ 1 ].label
+let forthOptionText = document.createTextNode( "Spanish" ); // formData[ 4 ].options[ 2 ].label
+let fifthOptionText = document.createTextNode( "Chinese" ); // formData[ 4 ].options[ 3 ].label
+let sixthOptionText = document.createTextNode( "Japanese" ); // formData[ 4 ].options[ 4 ].label
 
 // Set any needed attribute values for the HTML nodes
 wrapper.setAttribute('class', 'wrapper');
@@ -164,78 +193,84 @@ title.setAttribute('class', 'title');
 fields.setAttribute('class', 'fields');
 fields.setAttribute('id', 'fields');
 
-firstNameDiv.setAttribute('class', 'div_class');
-firstName.setAttribute( 'type', 'text' );
-firstName.setAttribute( 'id', 'user-first-name' );
-firstName.setAttribute('class', 'input_class');
+firstNameDiv.setAttribute('class', 'div_class'); // Nothing to iterate over.
+firstName.setAttribute( 'type', 'text' ); // formData[ 0 ].type
+firstName.setAttribute( 'id', 'user-first-name' ); // formData[ 0 ].id
+firstName.setAttribute('class', 'input_class'); // Nothing to iterate over.
 firstName.setAttribute( 'placeholder', 'First Name' );
-firstName_i.setAttribute('class', 'fa fa-user');
-firstName_i.setAttribute('aria-hidden', 'true');
+firstName_i.setAttribute('class', 'fa fa-user'); // formData[ 0 ].icon
+firstName_i.setAttribute('aria-hidden', 'true'); // Nothing to iterate over.
 
-lastNameDiv.setAttribute('class', 'div_class');
-lastName.setAttribute( 'type', 'text' );
-lastName.setAttribute( 'id', 'user-last-name' );
-lastName.setAttribute('class', 'input_class');
+lastNameDiv.setAttribute('class', 'div_class'); // Nothing to iterate over.
+lastName.setAttribute( 'type', 'text' ); // formData[ 1 ].type
+lastName.setAttribute( 'id', 'user-last-name' ); // formData[ 1 ].id
+lastName.setAttribute('class', 'input_class'); // Nothing to iterate over.
 lastName.setAttribute( 'placeholder', 'Last Name' );
-lastName_i.setAttribute('class', 'fa fa-user-o');
-lastName_i.setAttribute('aria-hidden', 'true');
+lastName_i.setAttribute('class', 'fa fa-user-o'); // formData[ 1 ].icon
+lastName_i.setAttribute('aria-hidden', 'true'); // Nothing to iterate over.
 
-emailDiv.setAttribute('class', 'div_class');
-email.setAttribute( 'type', 'email' );
-email.setAttribute( 'id', 'user-email' );
+emailDiv.setAttribute('class', 'div_class'); // Nothing to iterate over.
+email.setAttribute( 'type', 'email' ); // formData[ 2 ].type
+email.setAttribute( 'id', 'user-email' ); // formData[ 2 ].id
+email.setAttribute('class', 'input_class'); // Nothing to iterate over.
 email.setAttribute( 'placeholder', 'Email Address' );
-email_i.setAttribute('class', 'fa fa-envelope');
-email_i.setAttribute('aria-hidden', 'true');
+email_i.setAttribute('class', 'fa fa-envelope'); // formData[ 2 ].icon
+email_i.setAttribute('aria-hidden', 'true'); // Nothing to iterate over.
 
-urlDiv.setAttribute('class', 'div_class');
-url.setAttribute( 'type', 'text' );
-url.setAttribute( 'id', 'user-website' );
+urlDiv.setAttribute('class', 'div_class'); // Nothing to iterate over.
+url.setAttribute( 'type', 'text' ); // formData[ 3 ].type
+url.setAttribute( 'id', 'user-website' ); // formData[ 3 ].id
+url.setAttribute('class', 'input_class'); // Nothing to iterate over.
 url.setAttribute( 'placeholder', 'Current Website URL' );
-url_i.setAttribute('class', 'fa fa-link');
-url_i.setAttribute('aria-hidden', 'true');
+url_i.setAttribute('class', 'fa fa-link'); // formData[ 3 ].icon
+url_i.setAttribute('aria-hidden', 'true'); // Nothing to iterate over.
 
-selectDiv.setAttribute('class', 'div_class');
-select.setAttribute( 'type', 'select' );
-select.setAttribute( 'id', 'user-language' );
-select.setAttribute( 'placeholder', 'Select Language' );
-select_i.setAttribute('class', 'fa fa-language');
-select_i.setAttribute('aria-hidden', 'true');
+selectDiv.setAttribute('class', 'div_class'); // Nothing to iterate over.
+select.setAttribute( 'type', 'select' ); // formData[ 4 ].type
+select.setAttribute( 'id', 'user-language' ); // formData[ 4 ].id
+select.setAttribute('class', 'input_class'); // Nothing to iterate over.
+select.setAttribute( 'placeholder', 'Select Language' ); // "label": "Select Language"
+select_i.setAttribute('class', 'fa fa-language'); // formData[ 4 ].icon
+select_i.setAttribute('aria-hidden', 'true'); // Nothing to iterate over.
 
-firstOption.setAttribute( 'value', 'EN' );
-secondOption.setAttribute( 'placeholder', 'English' );
-secondOption.setAttribute( 'value', 'FR' );
-thirdOption.setAttribute( 'placeholder', 'French' );
-thirdOption.setAttribute( 'value', 'SP' );
-forthOption.setAttribute( 'placeholder', 'Spanish' );
-fifthOption.setAttribute( 'value', 'CH' );
-fifthOption.setAttribute( 'placeholder', 'Chinese' );
-sixthOption.setAttribute( 'value', 'JP' );
-sixthOption.setAttribute( 'placeholder', 'Japanese' );
+firstOption.setAttribute( 'value', 'EN' ); // formData[ 4 ].options[ 0 ].value
+secondOption.setAttribute( 'placeholder', 'English' ); // formData[ 4 ].options[ 0 ].label
+secondOption.setAttribute( 'value', 'FR' ); // formData[ 4 ].options[ 1 ].value
+thirdOption.setAttribute( 'placeholder', 'French' ); // formData[ 4 ].options[ 1 ].label
+thirdOption.setAttribute( 'value', 'SP' ); // formData[ 4 ].options[ 2 ].value
+forthOption.setAttribute( 'placeholder', 'Spanish' ); // formData[ 4 ].options[ 2 ].label // "label": "Spanish"
+fifthOption.setAttribute( 'value', 'CH' ); // formData[ 4 ].options[ 3 ].value
+fifthOption.setAttribute( 'placeholder', 'Chinese' ); // formData[ 4 ].options[ 3 ].label
+sixthOption.setAttribute( 'value', 'JP' ); // formData[ 4 ].options[ 4 ].value
+sixthOption.setAttribute( 'placeholder', 'Japanese' ); // formData[ 4 ].options[ 4 ].label
 
-textAreaDiv.setAttribute('class', 'div_class');
-textArea.setAttribute( 'type', 'textarea' );
-textArea.setAttribute( 'rows', '8' );
-textArea.setAttribute( 'cols', '80' );
-textArea.setAttribute( 'id', 'user-comment' );
+textAreaDiv.setAttribute('class', 'div_class'); // Nothing to iterate over.
+textArea.setAttribute( 'type', 'textarea' ); // formData[ 5 ].type
+textArea.setAttribute( 'rows', '8' ); // Nothing to iterate over.
+textArea.setAttribute( 'cols', '80' ); // Nothing to iterate over.
+textArea.setAttribute( 'id', 'user-comment' ); // formData[ 5 ].id
+textArea.setAttribute('class', 'input_class'); // Nothing to iterate over.
 textArea.setAttribute( 'placeholder', 'Your Comment' );
-textArea_i.setAttribute('class', 'fa fa-pencil');
-textArea_i.setAttribute('aria-hidden', 'true');
+textArea_i.setAttribute('class', 'fa fa-pencil'); // formData[ 5 ].icon
+textArea_i.setAttribute('aria-hidden', 'true'); // Nothing to iterate over.
 
-homeDiv.setAttribute('class', 'div_class');
-mobile.setAttribute( 'type', 'tel' );
-mobile.setAttribute( 'id', 'user-mobile' );
+mobileDiv.setAttribute('class', 'div_class'); // Nothing to iterate over.
+mobile.setAttribute( 'type', 'tel' ); // formData[ 6 ].type
+mobile.setAttribute( 'id', 'user-mobile' ); // formData[ 6 ].id
+mobile.setAttribute('class', 'input_class'); // Nothing to iterate over.
 mobile.setAttribute( 'placeholder', 'Mobile Number' );
-mobile_i.setAttribute('class', 'fa fa-mobile');
-mobile_i.setAttribute('aria-hidden', 'true');
+mobile_i.setAttribute('class', 'fa fa-mobile-phone'); // formData[ 6 ].icon
+mobile_i.setAttribute('aria-hidden', 'true'); // Nothing to iterate over.
 
-homeDiv.setAttribute('class', 'div_class');
-home.setAttribute( 'type', 'tel' );
-home.setAttribute( 'id', 'user-phone' );
+homeDiv.setAttribute('class', 'div_class'); // Nothing to iterate over.
+home.setAttribute( 'type', 'tel' ); // formData[ 7 ].type
+home.setAttribute( 'id', 'user-phone' ); // formData[ 7 ].id
+home.setAttribute('class', 'input_class'); // Nothing to iterate over.
 home.setAttribute( 'placeholder', 'Home Number' );
-home_i.setAttribute('class', 'fa fa-phone');
-home_i.setAttribute('aria-hidden', 'true');
+home_i.setAttribute('class', 'fa fa-phone'); // formData[ 7 ].icon
+home_i.setAttribute('aria-hidden', 'true'); // Nothing to iterate over.
 
-footer.setAttribute('class', 'footer');
+footer.setAttribute('class', 'footer'); // Nothing to iterate over.
 
 
 
@@ -287,8 +322,8 @@ mobileDiv.appendChild( mobile );
 homeDiv.appendChild( home_i );
 homeDiv.appendChild( home );
 
-form.appendChild( footer );
-footer.appendChild( button );
+form.appendChild( footer ); // Nothing to iterate over.
+footer.appendChild( button ); // Nothing to iterate over.
 
 // Add all of the text to each element
 title.appendChild( spanText );
