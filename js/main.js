@@ -104,24 +104,47 @@ let form = document.createElement( "form" );
 let header = document.createElement( "div" );
 let title = document.createElement( "span" );
 let fields = document.createElement( "div" );
+
 let firstNameDiv = document.createElement( "div" );
-let lastNameDiv = document.createElement( "div" );
-let selectDiv = document.createElement( "div" );
 let firstName_i = document.createElement( "i" );
 let firstName = document.createElement( "input" );
+
+let lastNameDiv = document.createElement( "div" );
+let lastName_i = document.createElement( "i" );
 let lastName = document.createElement( "input" );
+
+let emailDiv = document.createElement( "div" );
+let email_i = document.createElement( "i" );
 let email = document.createElement( "input" );
+
+let urlDiv = document.createElement( "div" );
+let url_i = document.createElement( "i" );
 let url = document.createElement( "input" );
+
+let selectDiv = document.createElement( "div" );
+let select_i = document.createElement( "i" );
+// let select = document.createElement( "input" );
 let select = document.createElement( "select" );
+
 let firstOption = document.createElement( "Option" );
 let secondOption = document.createElement( "Option" );
 let thirdOption = document.createElement( "Option" );
 let forthOption = document.createElement( "Option" );
 let fifthOption = document.createElement( "Option" );
 let sixthOption = document.createElement( "Option" );
+
+let textAreaDiv = document.createElement( "div" );
+let textArea_i = document.createElement( "i" );
 let textArea = document.createElement( "textarea" );
+
+let mobileDiv = document.createElement( "div" );
+let mobile_i = document.createElement( "i" );
 let mobile = document.createElement( "input" );
+
+let homeDiv = document.createElement( "div" );
+let home_i = document.createElement( "i" );
 let home = document.createElement( "input" );
+
 let footer = document.createElement( "div" );
 let button = document.createElement( "button" );
 
@@ -141,21 +164,44 @@ header.setAttribute('class', 'header');
 title.setAttribute('class', 'title');
 fields.setAttribute('class', 'fields');
 fields.setAttribute('id', 'fields');
+
+firstNameDiv.setAttribute('class', 'div_class');
 firstName.setAttribute( 'type', 'text' );
 firstName.setAttribute( 'id', 'user-first-name' );
+firstName.setAttribute('class', 'input_class');
 firstName.setAttribute( 'placeholder', 'First Name' );
+firstName_i.setAttribute('class', 'fa fa-envelope');
+firstName_i.setAttribute('aria-hidden', 'true');
+
+lastNameDiv.setAttribute('class', 'div_class');
 lastName.setAttribute( 'type', 'text' );
 lastName.setAttribute( 'id', 'user-last-name' );
+lastName.setAttribute('class', 'input_class');
 lastName.setAttribute( 'placeholder', 'Last Name' );
+lastName_i.setAttribute('class', 'fa fa-envelope');
+lastName_i.setAttribute('aria-hidden', 'true');
+
+emailDiv.setAttribute('class', 'div_class');
 email.setAttribute( 'type', 'email' );
 email.setAttribute( 'id', 'user-email' );
 email.setAttribute( 'placeholder', 'Email Address' );
+email_i.setAttribute('class', 'fa fa-envelope');
+email_i.setAttribute('aria-hidden', 'true');
+
+urlDiv.setAttribute('class', 'div_class');
 url.setAttribute( 'type', 'text' );
 url.setAttribute( 'id', 'user-website' );
 url.setAttribute( 'placeholder', 'Current Website URL' );
+url_i.setAttribute('class', 'fa fa-envelope');
+url_i.setAttribute('aria-hidden', 'true');
+
+selectDiv.setAttribute('class', 'div_class');
 select.setAttribute( 'type', 'select' );
 select.setAttribute( 'id', 'user-language' );
 select.setAttribute( 'placeholder', 'Select Language' );
+select_i.setAttribute('class', 'fa fa-envelope');
+select_i.setAttribute('aria-hidden', 'true');
+
 firstOption.setAttribute( 'value', 'EN' );
 secondOption.setAttribute( 'placeholder', 'English' );
 secondOption.setAttribute( 'value', 'FR' );
@@ -166,24 +212,32 @@ fifthOption.setAttribute( 'value', 'CH' );
 fifthOption.setAttribute( 'placeholder', 'Chinese' );
 sixthOption.setAttribute( 'value', 'JP' );
 sixthOption.setAttribute( 'placeholder', 'Japanese' );
+
+textAreaDiv.setAttribute('class', 'div_class');
 textArea.setAttribute( 'type', 'textarea' );
 textArea.setAttribute( 'rows', '8' );
 textArea.setAttribute( 'cols', '80' );
 textArea.setAttribute( 'id', 'user-comment' );
 textArea.setAttribute( 'placeholder', 'Your Comment' );
+textArea_i.setAttribute('class', 'fa fa-envelope');
+textArea_i.setAttribute('aria-hidden', 'true');
+
+homeDiv.setAttribute('class', 'div_class');
 mobile.setAttribute( 'type', 'tel' );
 mobile.setAttribute( 'id', 'user-mobile' );
 mobile.setAttribute( 'placeholder', 'Mobile Number' );
+mobile_i.setAttribute('class', 'fa fa-envelope');
+mobile_i.setAttribute('aria-hidden', 'true');
+
+homeDiv.setAttribute('class', 'div_class');
 home.setAttribute( 'type', 'tel' );
 home.setAttribute( 'id', 'user-phone' );
 home.setAttribute( 'placeholder', 'Home Number' );
+home_i.setAttribute('class', 'fa fa-envelope');
+home_i.setAttribute('aria-hidden', 'true');
+
 footer.setAttribute('class', 'footer');
 
-firstNameDiv.setAttribute('class', 'div_class');
-firstName_i.setAttribute('class', 'fa fa-envelope');
-firstName_i.setAttribute('aria-hidden', 'true');
-
-firstName.setAttribute('class', 'input_class');
 
 
 // Build the node tree
@@ -192,24 +246,48 @@ wrapper.appendChild( form );
 form.appendChild( header );
 header.appendChild( title );
 form.appendChild( fields );
+
 fields.appendChild( firstNameDiv );
 fields.appendChild( lastNameDiv );
+fields.appendChild( emailDiv );
+fields.appendChild( urlDiv );
+fields.appendChild( textAreaDiv );
+fields.appendChild( mobileDiv );
+fields.appendChild( homeDiv );
 fields.appendChild( selectDiv );
+
 firstNameDiv.appendChild( firstName_i );
 firstNameDiv.appendChild( firstName );
+
+lastNameDiv.appendChild( lastName_i );
 lastNameDiv.appendChild( lastName );
-fields.appendChild( email );
-fields.appendChild( url );
+
+emailDiv.appendChild( email_i );
+emailDiv.appendChild( email );
+
+urlDiv.appendChild( url_i );
+urlDiv.appendChild( url );
+
+
+selectDiv.appendChild( select_i );
 selectDiv.appendChild( select );
+
 select.appendChild( firstOption );
 select.appendChild( secondOption );
 select.appendChild( thirdOption );
 select.appendChild( forthOption );
 select.appendChild( fifthOption );
 select.appendChild( sixthOption );
-fields.appendChild( textArea );
-fields.appendChild( mobile );
-fields.appendChild( home );
+
+textAreaDiv.appendChild( textArea_i );
+textAreaDiv.appendChild( textArea );
+
+mobileDiv.appendChild( mobile_i );
+mobileDiv.appendChild( mobile );
+
+homeDiv.appendChild( home_i );
+homeDiv.appendChild( home );
+
 form.appendChild( footer );
 footer.appendChild( button );
 
