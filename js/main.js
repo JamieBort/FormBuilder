@@ -170,7 +170,7 @@ firstName.setAttribute( 'type', 'text' );
 firstName.setAttribute( 'id', 'user-first-name' );
 firstName.setAttribute('class', 'input_class');
 firstName.setAttribute( 'placeholder', 'First Name' );
-firstName_i.setAttribute('class', 'fa fa-envelope');
+firstName_i.setAttribute('class', 'fa fa-user');
 firstName_i.setAttribute('aria-hidden', 'true');
 
 lastNameDiv.setAttribute('class', 'div_class');
@@ -178,7 +178,7 @@ lastName.setAttribute( 'type', 'text' );
 lastName.setAttribute( 'id', 'user-last-name' );
 lastName.setAttribute('class', 'input_class');
 lastName.setAttribute( 'placeholder', 'Last Name' );
-lastName_i.setAttribute('class', 'fa fa-envelope');
+lastName_i.setAttribute('class', 'fa fa-user-o');
 lastName_i.setAttribute('aria-hidden', 'true');
 
 emailDiv.setAttribute('class', 'div_class');
@@ -192,14 +192,14 @@ urlDiv.setAttribute('class', 'div_class');
 url.setAttribute( 'type', 'text' );
 url.setAttribute( 'id', 'user-website' );
 url.setAttribute( 'placeholder', 'Current Website URL' );
-url_i.setAttribute('class', 'fa fa-envelope');
+url_i.setAttribute('class', 'fa fa-link');
 url_i.setAttribute('aria-hidden', 'true');
 
 selectDiv.setAttribute('class', 'div_class');
 select.setAttribute( 'type', 'select' );
 select.setAttribute( 'id', 'user-language' );
 select.setAttribute( 'placeholder', 'Select Language' );
-select_i.setAttribute('class', 'fa fa-envelope');
+select_i.setAttribute('class', 'fa fa-language');
 select_i.setAttribute('aria-hidden', 'true');
 
 firstOption.setAttribute( 'value', 'EN' );
@@ -219,21 +219,21 @@ textArea.setAttribute( 'rows', '8' );
 textArea.setAttribute( 'cols', '80' );
 textArea.setAttribute( 'id', 'user-comment' );
 textArea.setAttribute( 'placeholder', 'Your Comment' );
-textArea_i.setAttribute('class', 'fa fa-envelope');
+textArea_i.setAttribute('class', 'fa fa-pencil');
 textArea_i.setAttribute('aria-hidden', 'true');
 
 homeDiv.setAttribute('class', 'div_class');
 mobile.setAttribute( 'type', 'tel' );
 mobile.setAttribute( 'id', 'user-mobile' );
 mobile.setAttribute( 'placeholder', 'Mobile Number' );
-mobile_i.setAttribute('class', 'fa fa-envelope');
+mobile_i.setAttribute('class', 'fa fa-mobile');
 mobile_i.setAttribute('aria-hidden', 'true');
 
 homeDiv.setAttribute('class', 'div_class');
 home.setAttribute( 'type', 'tel' );
 home.setAttribute( 'id', 'user-phone' );
 home.setAttribute( 'placeholder', 'Home Number' );
-home_i.setAttribute('class', 'fa fa-envelope');
+home_i.setAttribute('class', 'fa fa-phone');
 home_i.setAttribute('aria-hidden', 'true');
 
 footer.setAttribute('class', 'footer');
