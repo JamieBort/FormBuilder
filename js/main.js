@@ -128,21 +128,21 @@ console.log(formData[ 7 ].icon);
 
 // -------- Your Code Goes Below this Line --------
 
+===========================
+// from Brandon
+console.log(formData.length);
+let form2 = document.querySelector(".fields");
+console.log(form2);
+===========================
+
 // Create all of the needed HTML nodes
 
+// Nothing to iterate over.
 let wrapper = document.createElement( "div" );
 let form = document.createElement( "form" );
 let header = document.createElement( "div" );
 let title = document.createElement( "span" );
 let fields = document.createElement( "div" );
-
-
-
-for (var i = 0; i < formData.length; i++) {
-//   let formData[i].id+Div = document.createElement( "div" );
-//   let formData[i].id+_i = document.createElement( "i" );
-  // let formData[i].id = document.createElement( "input" );
-}
 
 // formData[ 0 ].id = user-first-name
 let firstNameDiv = document.createElement( "div" );
