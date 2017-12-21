@@ -207,11 +207,11 @@ let sixthOptionText = document.createTextNode( "Japanese" ); // formData[ 4 ].op
 
 // Set any needed attribute values for the HTML nodes
 
-// wrapper.setAttribute('class', 'wrapper');
-// header.setAttribute('class', 'header');
-// title.setAttribute('class', 'title');
-// fields.setAttribute('class', 'fields');
-// fields.setAttribute('id', 'fields');
+wrapper.setAttribute('class', 'wrapper');
+header.setAttribute('class', 'header');
+title.setAttribute('class', 'title');
+fields.setAttribute('class', 'fields');
+fields.setAttribute('id', 'fields');
 
 firstNameDiv.setAttribute('class', 'div_class'); // Nothing to iterate over.
 firstName.setAttribute( 'type', 'text' ); // formData[ 0 ].type
@@ -305,10 +305,11 @@ fields.appendChild( firstNameDiv );
 fields.appendChild( lastNameDiv );
 fields.appendChild( emailDiv );
 fields.appendChild( urlDiv );
+fields.appendChild( selectDiv );
 fields.appendChild( textAreaDiv );
 fields.appendChild( mobileDiv );
 fields.appendChild( homeDiv );
-fields.appendChild( selectDiv );
+
 
 firstNameDiv.appendChild( firstName_i );
 firstNameDiv.appendChild( firstName );
