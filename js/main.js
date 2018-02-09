@@ -152,9 +152,15 @@ let home = document.createElement("input");
 let footer = document.createElement("div"); // Nothing to iterate over.
 let button = document.createElement("button"); // Nothing to iterate over.
 
+// ================================================
+// Remove the following.
+
 // Create all of the text nodes
 let spanText = document.createTextNode("Sign Up For My Web App"); // Nothing to iterate over.
 let buttonText = document.createTextNode("Submit Form"); // Nothing to iterate over.
+
+// Remove the above.
+// ================================================
 
 // Set any needed attribute values for the HTML nodes
 
