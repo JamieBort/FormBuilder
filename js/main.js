@@ -85,39 +85,38 @@ let formData = [
 
 // -------- Your Code Goes Below this Line --------
 
-let form = document.querySelector('.fields');
+let form = document.querySelector(".fields");
 
-for (let i = 0, i <= formData.length, i++) {
-  if (formData.type === 'textarea') {
+for (let i = 0; i < formData.length; i++) {
+  if (formData[i].type === 'text') {
 
-    let textarea_tag = document.createElement('textarea');
+    // The first name field
+    let textarea_tag3 = document.createElement('textarea');
+    textarea_tag3.placeholder = formData[i].label;
+    textarea_tag3.id = formData[i].id;
+    textarea_tag3.type = formData[i].type;
+    form.appendChild(textarea_tag3);
+}
+    // The last name field
 
+    // The email address field
+
+    // The current website field
+
+    // The current website field
+
+    // The TextArea field
+    else if (formData[i].type === 'textarea') {
+
+   }    let textarea_tag = document.createElement('textarea');
     textarea_tag.placeholder = formData[i].label;
     textarea_tag.id = formData[i].id;
     textarea_tag.type = formData[i].type;
+    form.appendChild(textarea_tag);
 
-    form.appendChild('textarea_tag');
+    // The mobile number field
 
-  } else if (formData.type === 'email') {
+    // The home number field
 
-    let email_input = document.createElement('input');
-
-    email.placeholder = formData[i].label;
-    email.id = formData[i].id;
-    email.type = formData[i].type;
-
-    form.appendElement('email');
-
-  } else if (formData.type === 'select') {
-    let select = document.createElement('input');
-    select.id = formData[i].id;
-    select.id = formData[i].type;
-
-for (let j = 0; j <= formData[i].options.length; j++ )
-    let option_tag = document.createElement('option');
-    option_tag.value = formData[i].options[j].value;
-    option_tag.label = formData[i].options[j].label;
-
-    select.appendElement('option_tag');
   }
 }
