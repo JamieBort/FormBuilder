@@ -88,35 +88,54 @@ let formData = [
 let form = document.querySelector(".fields");
 
 for (let i = 0; i < formData.length; i++) {
-  if (formData[i].type === 'text') {
 
-    // The first name field
-    let textarea_tag3 = document.createElement('textarea');
-    textarea_tag3.placeholder = formData[i].label;
-    textarea_tag3.id = formData[i].id;
-    textarea_tag3.type = formData[i].type;
-    form.appendChild(textarea_tag3);
-}
-    // The last name field
+  // The first name field
+  // The last name field
+  // The current website field
+  // The mobile number field
+  // The home number field
+  if (formData[i].type === 'text' || formData[i].type === 'tel') {
+    let input_type = document.createElement('input');
+    input_type.placeholder = formData[i].label;
+    input_type.id = formData[i].id;
+    input_type.type = formData[i].type;
+    form.appendChild(input_type);
+  }
 
-    // The email address field
+  // The email address field
+  else if (formData[i].type === 'email') {
+    let email_input = document.createElement('input');
+    email_input.placeholder = formData[i].label;
+    email_input.id = formData[i].id;
+    email_input.type = formData[i].type;
+    form.appendChild(email_input);
+  }
 
-    // The current website field
+  // The select language pull-down
+  else if (formData[i].type === 'select') {
+    let select = document.createElement('select');
+    select.id = formData[i].id;
+    select.type = formData[i].type;
 
-    // The current website field
+    let option = document.createElement('option');
+    option.text = formData[i].label;
+    select.appendChild(option);
 
-    // The TextArea field
-    else if (formData[i].type === 'textarea') {
+    for (var j = 0; j < formData[i].options.length; j++) {
+      let option = document.createElement('option');
+      option.value = formData[i].options[j].value;
+      option.text = formData[i].options[j].label;
+      select.appendChild(option);
+    }
+    form.appendChild(select);
+  }
 
-   }    let textarea_tag = document.createElement('textarea');
+  // The TextArea field
+  if (formData[i].type === 'textarea') {
+    let textarea_tag = document.createElement('textarea');
     textarea_tag.placeholder = formData[i].label;
     textarea_tag.id = formData[i].id;
     textarea_tag.type = formData[i].type;
     form.appendChild(textarea_tag);
-
-    // The mobile number field
-
-    // The home number field
-
   }
 }
