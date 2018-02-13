@@ -3,7 +3,7 @@ TODO:
 A completed commit was pushed. However I need to revisit this to address the following:
 - [X] 1. Come back to implement the ['Hard Mode'](#hard-mode) using font awesome.
 - [X] 2. When that is done, address the CSS so that the finished product looks like the image given to us.
-- [ ] 3. Refactor the code so that it iterates over the formData array using loops to make it more concise. See Brandon's for an example of how it should ultimately look.
+- [X] 3. Refactor the code so that it iterates over the formData array using loops to make it more concise. See Brandon's for an example of how it should ultimately look.
 - [ ] 4. Optionally, figure out which value the 'value' attribute should in the form elements. So that it pulls from the data file and/or pushes to the data base.
 - [ ] 5. Lastly, update `gh-pages`.
 
