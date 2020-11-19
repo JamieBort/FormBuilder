@@ -1,4 +1,6 @@
-TODO:
+# Form Builder
+
+## To Do
 
 A completed commit was pushed. However I need to revisit this to address the following:
 - [X] 1. Come back to implement the ['Hard Mode'](#hard-mode) using font awesome.
@@ -6,6 +8,8 @@ A completed commit was pushed. However I need to revisit this to address the fol
 - [X] 3. Refactor the code so that it iterates over the formData array using loops to make it more concise. See Brandon's for an example of how it should ultimately look.
 - [ ] 4. Optionally, figure out which value the 'value' attribute should in the form elements. So that it pulls from the data file and/or pushes to the data base.
 - [X] 5. Lastly, update `gh-pages`.
+- [ ] 6. Make this responsive by styling it for mobile too.
+- [ ] 7. Push to `gh-pages` again.
 
 from: https://newline.theironyard.com/cohorts/15/courses/9/projects/55
 
